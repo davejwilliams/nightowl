@@ -1,1 +1,1 @@
-Nightowl Wordpress Theme
+Nightowl WordPress Theme using a combination of: Underscores, Zurb Foundation, SASS, and a little creativity and ingenuity.

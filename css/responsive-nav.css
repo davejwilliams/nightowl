@@ -41,7 +41,7 @@ a {
   list-style: none;
   *zoom: 1;
   background: #1b75ba;
-  margin-left: 0;
+  margin: 0;
 }
 /* line 50, ../sass/responsive-nav.scss */
 .nav .current_page_item, .nav a:hover {

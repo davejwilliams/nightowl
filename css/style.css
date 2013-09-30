@@ -1,0 +1,486 @@
+/* line 15, ../sass/style.scss */
+.clearfix::after {
+  content: ":)";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+/* line 23, ../sass/style.scss */
+.clearboth {
+  clear: both;
+}
+
+/* line 27, ../sass/style.scss */
+html {
+  background-color: #071c22;
+}
+
+/* line 31, ../sass/style.scss */
+body {
+  z-index: -1000;
+}
+
+/* line 35, ../sass/style.scss */
+p {
+  color: #9ea8b3;
+}
+
+/* line 39, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+/* line 43, ../sass/style.scss */
+a {
+  color: white;
+}
+
+/* line 47, ../sass/style.scss */
+.spacer {
+  height: 20px;
+}
+
+/* line 53, ../sass/style.scss */
+.topBand {
+  background-color: #363636;
+  padding: 20px 0;
+}
+/* line 56, ../sass/style.scss */
+.topBand li {
+  padding-bottom: 0;
+}
+/* line 59, ../sass/style.scss */
+.topBand h3 {
+  color: #1b75ba;
+}
+
+/* line 64, ../sass/style.scss */
+.logo {
+  max-width: 250px;
+}
+
+/* line 72, ../sass/style.scss */
+.socialIcon {
+  width: 60px;
+  height: 40px;
+}
+
+/* line 77, ../sass/style.scss */
+#phoneNumber {
+  color: #1b75ba;
+  margin: 0;
+}
+/* line 80, ../sass/style.scss */
+#phoneNumber a {
+  color: #1b75ba;
+}
+
+/* line 87, ../sass/style.scss */
+#cloudBackground {
+  position: fixed;
+  z-index: -10;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background: #0f435b url("../img/moon.png") no-repeat right 20px;
+  background-size: auto 675px;
+  top: 0;
+}
+
+/* line 98, ../sass/style.scss */
+#clouds01 {
+  position: absolute;
+  z-index: 5;
+  background: url("../img/cloud1.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: 450px;
+  -webkit-animation: clouds01_scroll linear 60s infinite;
+  -moz-animation: clouds01_scroll linear 60s infinite;
+  -ms-animation: clouds01_scroll linear 60s infinite;
+  -o-animation: clouds01_scroll linear 60s infinite;
+  animation: clouds01_scroll linear 60s infinite;
+}
+
+@-webkit-keyframes clouds01_scroll {
+  /* line 112, ../sass/style.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 112, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes clouds01_scroll {
+  /* line 113, ../sass/style.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 113, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-ms-keyframes clouds01_scroll {
+  /* line 114, ../sass/style.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 114, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-o-keyframes clouds01_scroll {
+  /* line 115, ../sass/style.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 115, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes clouds01_scroll {
+  /* line 116, ../sass/style.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 116, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+/* line 118, ../sass/style.scss */
+#clouds02 {
+  position: absolute;
+  z-index: 10;
+  background: url("../img/cloud2.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: 450px;
+  -webkit-animation: clouds02_scroll linear 90s infinite;
+  -moz-animation: clouds02_scroll linear 90s infinite;
+  -ms-animation: clouds02_scroll linear 90s infinite;
+  -o-animation: clouds02_scroll linear 90s infinite;
+  animation: clouds02_scroll linear 90s infinite;
+}
+
+@-webkit-keyframes clouds02_scroll {
+  /* line 132, ../sass/style.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 132, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes clouds02_scroll {
+  /* line 133, ../sass/style.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 133, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-ms-keyframes clouds02_scroll {
+  /* line 134, ../sass/style.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 134, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-o-keyframes clouds02_scroll {
+  /* line 135, ../sass/style.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 135, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes clouds02_scroll {
+  /* line 136, ../sass/style.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 136, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+/* line 138, ../sass/style.scss */
+#clouds03 {
+  position: absolute;
+  z-index: 10;
+  background: url("../img/cloud3.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: 450px;
+  -webkit-animation: clouds03_scroll linear 120s infinite;
+  -moz-animation: clouds03_scroll linear 120s infinite;
+  -ms-animation: clouds03_scroll linear 120s infinite;
+  -o-animation: clouds03_scroll linear 120s infinite;
+  animation: clouds03_scroll linear 120s infinite;
+}
+
+@-webkit-keyframes clouds03_scroll {
+  /* line 152, ../sass/style.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 152, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes clouds03_scroll {
+  /* line 153, ../sass/style.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 153, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-ms-keyframes clouds03_scroll {
+  /* line 154, ../sass/style.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 154, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-o-keyframes clouds03_scroll {
+  /* line 155, ../sass/style.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 155, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes clouds03_scroll {
+  /* line 156, ../sass/style.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 156, ../sass/style.scss */
+  to {
+    left: 100%;
+  }
+}
+
+/* line 160, ../sass/style.scss */
+#grassBand {
+  background: url("../img/grass.png") repeat-x right bottom;
+  background-size: auto 150px;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 174, ../sass/style.scss */
+.orbit-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+}
+/* line 179, ../sass/style.scss */
+.orbit-container .slider {
+  height: 250px;
+}
+/* line 182, ../sass/style.scss */
+.orbit-container .slider p {
+  padding: 20px 0;
+  color: #ffffff;
+}
+/* line 186, ../sass/style.scss */
+.orbit-container .slider .button {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+}
+
+/* line 196, ../sass/style.scss */
+#mainBand {
+  position: relative;
+  background-color: #071c22;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* line 204, ../sass/style.scss */
+#ourDifference {
+  background: #092833;
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+/* line 210, ../sass/style.scss */
+#ourDifference strong {
+  color: #1b75ba;
+}
+/* line 213, ../sass/style.scss */
+#ourDifference p {
+  margin-bottom: 10px;
+}
+
+/* line 218, ../sass/style.scss */
+.icon {
+  width: auto;
+  height: 18px;
+  margin: -3px 10px 0 0;
+}
+
+/* line 225, ../sass/style.scss */
+hr.embossed {
+  border-width: 1px 0px;
+  border-color: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) transparent;
+}
+
+/* line 232, ../sass/style.scss */
+#whatsNew {
+  color: #9ea8b3;
+}
+/* line 234, ../sass/style.scss */
+#whatsNew ul {
+  list-style: none;
+}
+
+/* line 245, ../sass/style.scss */
+.bubble {
+  position: relative;
+  padding: 10px;
+  background: #092833;
+}
+
+/* line 252, ../sass/style.scss */
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 10px 0;
+  border-color: #092833 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 23px;
+}
+
+/* line 265, ../sass/style.scss */
+.testimonial-name {
+  color: #ffffff;
+  line-height: 1em;
+}
+
+/* line 270, ../sass/style.scss */
+.testimonial-company {
+  font-size: .75em;
+  color: #ffffff;
+}
+
+/* line 277, ../sass/style.scss */
+footer {
+  background-color: #092833;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* Large screens */
+@media only screen and (min-width: 940px) {
+  /* line 291, ../sass/style.scss */
+  .mobilesOnly {
+    display: none;
+  }
+
+  /* line 292, ../sass/style.scss */
+  .desktopOnly {
+    display: inline-block;
+  }
+
+  /* line 294, ../sass/style.scss */
+  #cloudBackground {
+    background-position: 100% 20px;
+  }
+}
+/* Medium screens */
+@media only screen and (max-width: 939px) and (min-width: 768px) {
+  /* line 303, ../sass/style.scss */
+  .mobilesOnly {
+    display: none;
+  }
+
+  /* line 304, ../sass/style.scss */
+  .desktopOnly {
+    display: inline-block;
+  }
+
+  /* line 306, ../sass/style.scss */
+  #cloudBackground {
+    background-position: 100% 20px;
+  }
+}
+/* Small screens */
+@media only screen and (max-width: 767px) {
+  /* line 315, ../sass/style.scss */
+  .mobilesOnly {
+    display: inline-block;
+  }
+
+  /* line 316, ../sass/style.scss */
+  .desktopOnly {
+    display: none;
+  }
+
+  /* line 318, ../sass/style.scss */
+  #cloudBackground {
+    background-position: 100% 20px;
+  }
+}

@@ -48,6 +48,10 @@ a {
   height: 20px;
 }
 
+h6 a {
+  font-weight: bold;
+}
+
 // ============== HEADER AREA ==============
 
 .topBand {
@@ -82,9 +86,19 @@ a {
   }
 }
 
-#navWrap {
+#navBand {
   background-color: $nightOwlBlue;
   width: 100%;
+}
+
+.toggleMenu {
+  padding: 10px 15px;
+  a {
+	padding: 10px 15px;
+	&:hover, &:visited, &:active {
+	  padding: 10px 15px;
+	}
+  }
 }
 
 // ============== CLOUDS AREA ==============
@@ -93,9 +107,9 @@ a {
   position: fixed;
   z-index: -10;
   width: 100%;
-  height: $cloudHeight + 100;
+  height: $cloudHeight + 1000;
   overflow: hidden;
-  background: $nightOwlSky url('../img/moon.png') no-repeat right 20px;
+  background: $nightOwlSky url('../images/moon.png') no-repeat right 20px;
   background-size: auto 675px;
   top: 0;
 }
@@ -103,7 +117,7 @@ a {
 #clouds01 {
   position: absolute;
   z-index: 5;
-  background: url("../img/cloud1.png") no-repeat;
+  background: url("../images/cloud1.png") no-repeat;
   top: 0;
   width: 1000px;
   height: $cloudHeight;
@@ -123,7 +137,7 @@ a {
 #clouds02 {
   position: absolute;
   z-index: 10;
-  background: url("../img/cloud2.png") no-repeat;
+  background: url("../images/cloud2.png") no-repeat;
   top: 0;
   width: 1000px;
   height: $cloudHeight;
@@ -143,7 +157,7 @@ a {
 #clouds03 {
   position: absolute;
   z-index: 10;
-  background: url("../img/cloud3.png") no-repeat;
+  background: url("../images/cloud3.png") no-repeat;
   top: 0;
   width: 1000px;
   height: $cloudHeight;
@@ -163,7 +177,7 @@ a {
 // ============== SCROLLER AREA ==============
 
 #grassBand{
-  background: url("../img/grass.png") repeat-x right bottom;
+  background: url("../images/grass.png") repeat-x right bottom;
   background-size: auto 150px;
   height: 250px;
   width: 100%;

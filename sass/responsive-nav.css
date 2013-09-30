@@ -28,7 +28,7 @@ a {
   list-style: none;
   *zoom: 1;
   background: #1b75ba;
-  margin-left: 0; }
+  margin: 0; }
   .nav .current_page_item, .nav a:hover {
     background: #1e83d0; }
   .nav:before {
