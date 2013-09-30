@@ -1,4 +1,492 @@
+/* line 15, ../sass/mystyles.scss */
+.clearfix::after {
+  content: ":)";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+/* line 23, ../sass/mystyles.scss */
+.clearboth {
+  clear: both;
+}
+
+/* line 27, ../sass/mystyles.scss */
+html {
+  background-color: #071c22;
+}
+
+/* line 31, ../sass/mystyles.scss */
+body {
+  z-index: -1000;
+}
+
+/* line 35, ../sass/mystyles.scss */
+p {
+  color: #9ea8b3;
+}
+
+/* line 39, ../sass/mystyles.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+/* line 43, ../sass/mystyles.scss */
+a {
+  color: white;
+}
+
+/* line 47, ../sass/mystyles.scss */
+.spacer {
+  height: 20px;
+}
+
+/* line 53, ../sass/mystyles.scss */
+.topBand {
+  background-color: #363636;
+  padding: 20px 0;
+}
+/* line 56, ../sass/mystyles.scss */
+.topBand li {
+  padding-bottom: 0;
+}
+/* line 59, ../sass/mystyles.scss */
+.topBand h3 {
+  color: #1b75ba;
+}
+
+/* line 64, ../sass/mystyles.scss */
+.logo {
+  max-width: 250px;
+}
+
+/* line 72, ../sass/mystyles.scss */
+.socialIcon {
+  width: 60px;
+  height: 40px;
+}
+
+/* line 77, ../sass/mystyles.scss */
+#phoneNumber {
+  color: #1b75ba;
+  margin: 0;
+}
+/* line 80, ../sass/mystyles.scss */
+#phoneNumber a {
+  color: #1b75ba;
+}
+
+/* line 85, ../sass/mystyles.scss */
 #navWrap {
-	background-color: #1B75BA;
-	width: 100%;
+  background-color: #1b75ba;
+  width: 100%;
+}
+
+/* line 92, ../sass/mystyles.scss */
+#cloudBackground {
+  position: fixed;
+  z-index: -10;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background: #0f435b url("../img/moon.png") no-repeat right 20px;
+  background-size: auto 675px;
+  top: 0;
+}
+
+/* line 103, ../sass/mystyles.scss */
+#clouds01 {
+  position: absolute;
+  z-index: 5;
+  background: url("../img/cloud1.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: 450px;
+  -webkit-animation: clouds01_scroll linear 60s infinite;
+  -moz-animation: clouds01_scroll linear 60s infinite;
+  -ms-animation: clouds01_scroll linear 60s infinite;
+  -o-animation: clouds01_scroll linear 60s infinite;
+  animation: clouds01_scroll linear 60s infinite;
+}
+
+@-webkit-keyframes clouds01_scroll {
+  /* line 117, ../sass/mystyles.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 117, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes clouds01_scroll {
+  /* line 118, ../sass/mystyles.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 118, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-ms-keyframes clouds01_scroll {
+  /* line 119, ../sass/mystyles.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 119, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-o-keyframes clouds01_scroll {
+  /* line 120, ../sass/mystyles.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 120, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes clouds01_scroll {
+  /* line 121, ../sass/mystyles.scss */
+  from {
+    left: -1000px;
+  }
+
+  /* line 121, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+/* line 123, ../sass/mystyles.scss */
+#clouds02 {
+  position: absolute;
+  z-index: 10;
+  background: url("../img/cloud2.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: 450px;
+  -webkit-animation: clouds02_scroll linear 90s infinite;
+  -moz-animation: clouds02_scroll linear 90s infinite;
+  -ms-animation: clouds02_scroll linear 90s infinite;
+  -o-animation: clouds02_scroll linear 90s infinite;
+  animation: clouds02_scroll linear 90s infinite;
+}
+
+@-webkit-keyframes clouds02_scroll {
+  /* line 137, ../sass/mystyles.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 137, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes clouds02_scroll {
+  /* line 138, ../sass/mystyles.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 138, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-ms-keyframes clouds02_scroll {
+  /* line 139, ../sass/mystyles.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 139, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-o-keyframes clouds02_scroll {
+  /* line 140, ../sass/mystyles.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 140, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes clouds02_scroll {
+  /* line 141, ../sass/mystyles.scss */
+  from {
+    left: -2000px;
+  }
+
+  /* line 141, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+/* line 143, ../sass/mystyles.scss */
+#clouds03 {
+  position: absolute;
+  z-index: 10;
+  background: url("../img/cloud3.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: 450px;
+  -webkit-animation: clouds03_scroll linear 120s infinite;
+  -moz-animation: clouds03_scroll linear 120s infinite;
+  -ms-animation: clouds03_scroll linear 120s infinite;
+  -o-animation: clouds03_scroll linear 120s infinite;
+  animation: clouds03_scroll linear 120s infinite;
+}
+
+@-webkit-keyframes clouds03_scroll {
+  /* line 157, ../sass/mystyles.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 157, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes clouds03_scroll {
+  /* line 158, ../sass/mystyles.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 158, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-ms-keyframes clouds03_scroll {
+  /* line 159, ../sass/mystyles.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 159, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@-o-keyframes clouds03_scroll {
+  /* line 160, ../sass/mystyles.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 160, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes clouds03_scroll {
+  /* line 161, ../sass/mystyles.scss */
+  from {
+    left: -3000px;
+  }
+
+  /* line 161, ../sass/mystyles.scss */
+  to {
+    left: 100%;
+  }
+}
+
+/* line 165, ../sass/mystyles.scss */
+#grassBand {
+  background: url("../img/grass.png") repeat-x right bottom;
+  background-size: auto 150px;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 179, ../sass/mystyles.scss */
+.orbit-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+}
+/* line 184, ../sass/mystyles.scss */
+.orbit-container .slider {
+  height: 250px;
+}
+/* line 187, ../sass/mystyles.scss */
+.orbit-container .slider p {
+  padding: 20px 0;
+  color: #ffffff;
+}
+/* line 191, ../sass/mystyles.scss */
+.orbit-container .slider .button {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+}
+
+/* line 201, ../sass/mystyles.scss */
+#mainBand {
+  position: relative;
+  background-color: #071c22;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* line 209, ../sass/mystyles.scss */
+#ourDifference {
+  background: #092833;
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+/* line 215, ../sass/mystyles.scss */
+#ourDifference strong {
+  color: #1b75ba;
+}
+/* line 218, ../sass/mystyles.scss */
+#ourDifference p {
+  margin-bottom: 10px;
+}
+
+/* line 223, ../sass/mystyles.scss */
+.icon {
+  width: auto;
+  height: 18px;
+  margin: -3px 10px 0 0;
+}
+
+/* line 230, ../sass/mystyles.scss */
+hr.embossed {
+  border-width: 1px 0px;
+  border-color: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) transparent;
+}
+
+/* line 237, ../sass/mystyles.scss */
+#whatsNew {
+  color: #9ea8b3;
+}
+/* line 239, ../sass/mystyles.scss */
+#whatsNew ul {
+  list-style: none;
+}
+
+/* line 250, ../sass/mystyles.scss */
+.bubble {
+  position: relative;
+  padding: 10px;
+  background: #092833;
+}
+
+/* line 257, ../sass/mystyles.scss */
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 10px 0;
+  border-color: #092833 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 23px;
+}
+
+/* line 270, ../sass/mystyles.scss */
+.testimonial-name {
+  color: #ffffff;
+  line-height: 1em;
+}
+
+/* line 275, ../sass/mystyles.scss */
+.testimonial-company {
+  font-size: .75em;
+  color: #ffffff;
+}
+
+/* line 282, ../sass/mystyles.scss */
+footer {
+  background-color: #092833;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* Large screens */
+@media only screen and (min-width: 940px) {
+  /* line 296, ../sass/mystyles.scss */
+  .mobilesOnly {
+    display: none;
+  }
+
+  /* line 297, ../sass/mystyles.scss */
+  .desktopOnly {
+    display: inline-block;
+  }
+
+  /* line 299, ../sass/mystyles.scss */
+  #cloudBackground {
+    background-position: 100% 20px;
+  }
+}
+/* Medium screens */
+@media only screen and (max-width: 939px) and (min-width: 768px) {
+  /* line 308, ../sass/mystyles.scss */
+  .mobilesOnly {
+    display: none;
+  }
+
+  /* line 309, ../sass/mystyles.scss */
+  .desktopOnly {
+    display: inline-block;
+  }
+
+  /* line 311, ../sass/mystyles.scss */
+  #cloudBackground {
+    background-position: 100% 20px;
+  }
+}
+/* Small screens */
+@media only screen and (max-width: 767px) {
+  /* line 320, ../sass/mystyles.scss */
+  .mobilesOnly {
+    display: inline-block;
+  }
+
+  /* line 321, ../sass/mystyles.scss */
+  .desktopOnly {
+    display: none;
+  }
+
+  /* line 323, ../sass/mystyles.scss */
+  #cloudBackground {
+    background-position: 100% 20px;
+  }
 }

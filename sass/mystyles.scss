@@ -1,0 +1,327 @@
+// Type 'compass watch' in the console, while in the site directory, to start the SCSS program.
+
+$nightOwlGray: #363636;
+$nightOwlBlue: #1b75ba;
+$nightOwlGreen: #071c22;
+$nightOwlSky: #0f435b;
+$nightOwlTextColor: #9ea8b3;
+
+$cloudHeight: 450px;
+//$bubbleColor: rgba(15, 67, 91, 0.3);
+$bubbleColor: #092833;
+$embossedBorder: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) transparent;
+
+
+.clearfix::after {
+  content: ":)";
+  clear:both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+.clearboth {
+  clear: both;
+}
+
+html {
+  background-color: $nightOwlGreen;
+}
+
+body {
+  z-index: -1000;
+}
+
+p {
+  color: $nightOwlTextColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.spacer {
+  height: 20px;
+}
+
+// ============== HEADER AREA ==============
+
+.topBand {
+  background-color: $nightOwlGray;
+  padding: 20px 0;
+  li {
+	padding-bottom: 0;
+  }
+  h3 {
+	color: $nightOwlBlue;
+  }
+}
+
+.logo {
+  max-width: 250px;
+}
+
+//.name {
+//  font-size: 15px;
+//}
+
+.socialIcon {
+  width: 60px;
+  height: 40px;
+}
+
+#phoneNumber{
+  color: $nightOwlBlue;
+  margin: 0;
+  a{
+	color: $nightOwlBlue;
+  }
+}
+
+#navWrap {
+  background-color: $nightOwlBlue;
+  width: 100%;
+}
+
+// ============== CLOUDS AREA ==============
+
+#cloudBackground{
+  position: fixed;
+  z-index: -10;
+  width: 100%;
+  height: $cloudHeight + 100;
+  overflow: hidden;
+  background: $nightOwlSky url('../img/moon.png') no-repeat right 20px;
+  background-size: auto 675px;
+  top: 0;
+}
+
+#clouds01 {
+  position: absolute;
+  z-index: 5;
+  background: url("../img/cloud1.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: $cloudHeight;
+  -webkit-animation: clouds01_scroll linear 60s infinite;
+  -moz-animation: clouds01_scroll linear 60s infinite;
+  -ms-animation: clouds01_scroll linear 60s infinite;
+  -o-animation: clouds01_scroll linear 60s infinite;
+  animation: clouds01_scroll linear 60s infinite;
+}
+
+@-webkit-keyframes clouds01_scroll { from {left: -1000px;} to {left: 100%;} }
+@-moz-keyframes clouds01_scroll { from {left: -1000px;} to {left: 100%;} }
+@-ms-keyframes clouds01_scroll { from {left: -1000px;} to {left: 100%;} }
+@-o-keyframes clouds01_scroll { from {left: -1000px;} to {left: 100%;} }
+@keyframes clouds01_scroll { from {left: -1000px;} to {left: 100%;} }
+
+#clouds02 {
+  position: absolute;
+  z-index: 10;
+  background: url("../img/cloud2.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: $cloudHeight;
+  -webkit-animation: clouds02_scroll linear 90s infinite;
+  -moz-animation: clouds02_scroll linear 90s infinite;
+  -ms-animation: clouds02_scroll linear 90s infinite;
+  -o-animation: clouds02_scroll linear 90s infinite;
+  animation: clouds02_scroll linear 90s infinite;
+}
+
+@-webkit-keyframes clouds02_scroll { from {left: -2000px;} to {left: 100%;} }
+@-moz-keyframes clouds02_scroll { from {left: -2000px;} to {left: 100%;} }
+@-ms-keyframes clouds02_scroll { from {left: -2000px;} to {left: 100%;} }
+@-o-keyframes clouds02_scroll { from {left: -2000px;} to {left: 100%;} }
+@keyframes clouds02_scroll { from {left: -2000px;} to {left: 100%;} }
+
+#clouds03 {
+  position: absolute;
+  z-index: 10;
+  background: url("../img/cloud3.png") no-repeat;
+  top: 0;
+  width: 1000px;
+  height: $cloudHeight;
+  -webkit-animation: clouds03_scroll linear 120s infinite;
+  -moz-animation: clouds03_scroll linear 120s infinite;
+  -ms-animation: clouds03_scroll linear 120s infinite;
+  -o-animation: clouds03_scroll linear 120s infinite;
+  animation: clouds03_scroll linear 120s infinite;
+}
+
+@-webkit-keyframes clouds03_scroll { from {left: -3000px;} to {left: 100%;} }
+@-moz-keyframes clouds03_scroll { from {left: -3000px;} to {left: 100%;} }
+@-ms-keyframes clouds03_scroll { from {left: -3000px;} to {left: 100%;} }
+@-o-keyframes clouds03_scroll { from {left: -3000px;} to {left: 100%;} }
+@keyframes clouds03_scroll { from {left: -3000px;} to {left: 100%;} }
+
+// ============== SCROLLER AREA ==============
+
+#grassBand{
+  background: url("../img/grass.png") repeat-x right bottom;
+  background-size: auto 150px;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.scroller {
+  //background: rgba(0, 0, 0, 0.6);
+  //border: red 1px dashed;
+}
+
+.orbit-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+  .slider {
+	//background: rgba(0, 0, 0, 0.6);
+	height: 250px;
+	p {
+	  padding: 20px 0;
+	  color: #ffffff;
+	}
+	.button {
+	  position: absolute;
+	  bottom: 10px;
+	  left: 40px;
+	}
+  }
+}
+
+// ============== MAIN AREA ==============
+
+#mainBand {
+  position: relative;
+  background-color: $nightOwlGreen;
+  width: 100%;
+  padding: 20px 0;
+  //min-height: 3000px;
+}
+
+#ourDifference {
+  //background: rgba(255, 255, 255, 0.05);
+  background: $bubbleColor;
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  strong {
+	color: $nightOwlBlue;
+  }
+  p {
+	margin-bottom: 10px;
+  }
+}
+
+.icon {
+  width: auto;
+  height: 18px;
+  //margin-right: 5px;
+  margin: -3px 10px 0 0;
+}
+
+hr.embossed {
+  border-width: 1px 0px;
+  border-color: $embossedBorder
+}
+
+// ============== WHATS NEW AREA ==============
+
+#whatsNew {
+  color: $nightOwlTextColor;
+  ul {
+	list-style: none;
+	li {
+	  //height: 15px;
+	}
+  }
+}
+
+// ============== TESTIMONIALS AREA ==============
+
+.bubble
+{
+  position: relative;
+  padding: 10px;
+  background: $bubbleColor;
+}
+
+.bubble:after
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 10px 0;
+  border-color: $bubbleColor transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 23px;
+}
+
+.testimonial-name {
+  color: #ffffff;
+  line-height: 1em;
+}
+
+.testimonial-company {
+  font-size: .75em;
+  color: #ffffff;
+}
+
+// ============== FOOTER AREA ==============
+
+footer {
+  //background-color: darken($nightOwlGreen, 2%);
+  background-color: $bubbleColor;
+  padding: 20px 0;
+  width: 100%;
+}
+
+
+
+// ============== MEDIA QUERIES ==============
+
+/* Large screens */
+@media only screen and (min-width: 940px) {
+
+  .mobilesOnly {display: none;}
+  .desktopOnly {display: inline-block;}
+
+  #cloudBackground{
+	background-position: 100% 20px;
+  }
+
+}
+
+/* Medium screens */
+@media only screen and (max-width: 939px) and (min-width: 768px) {
+
+  .mobilesOnly {display: none;}
+  .desktopOnly {display: inline-block;}
+
+  #cloudBackground{
+	background-position: 100% 20px;
+  }
+
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+
+  .mobilesOnly {display: inline-block;}
+  .desktopOnly {display: none;}
+
+  #cloudBackground{
+	background-position: 100% 20px;
+  }
+
+}

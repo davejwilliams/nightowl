@@ -1,0 +1,152 @@
+$main-color: #1B75BA;
+
+$main-color-dark: darken( $main-color, 10% );
+$main-color-darker: darken( $main-color, 15% );
+$main-color-darkest: darken( $main-color, 20% );
+
+$main-color-light: lighten( $main-color, 5% );
+$main-color-lighter: lighten( $main-color, 10% );
+
+$text-color: #fff;
+
+
+body, nav, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.toggleMenu {
+  display: none;
+  background: $main-color;
+  padding: 12px 15px 5px;
+  color: $text-color;
+  a {
+	display: none;
+	background: $main-color;
+	padding: 12px 15px 5px;
+	color: $text-color;
+	&:hover, &:visited, &:active {
+	  display: none;
+	  background: $main-color;
+	  padding: 12px 15px 5px;
+	  color: $text-color;
+	}
+  }
+}
+
+.nav {
+  list-style: none;
+  *zoom: 1;
+  background: $main-color;
+  margin-left: 0;
+  .current_page_item, a:hover {
+	background: $main-color-light;
+  }
+  &:before {
+	content: " ";
+	display: table;
+  }
+  &:after {
+	content: " ";
+	display: table;
+	clear: both;
+  }
+  ul {
+	list-style: none;
+	width: 9em;
+  }
+  a {
+	padding: 10px 15px;
+	color: $text-color;
+	&:hover, &:visited, &:active {
+	  padding: 10px 15px;
+	  color: $text-color;
+	}
+  }
+  li {
+	position: relative;
+	ul {
+	  position: absolute;
+	  left: -9999px;
+	  margin: 0;
+	}
+	li {
+	  &.hover ul {
+		left: 100%;
+		top: 0;
+		margin: 0;
+	  }
+	  a {
+		display: block;
+		background: $main-color-dark;
+		position: relative;
+		z-index: 100;
+		border-top: 1px solid $main-color-darkest;
+	  }
+	  li a {
+		background: $main-color-darker;
+		z-index: 200;
+		border-top: 1px solid $main-color;
+	  }
+	}
+	li:first-child {
+	  a {
+		border-top: none;
+	  }
+	}
+  }
+  > li {
+	float: left;
+	/*border-top: 1px solid gray;*/
+	> {
+	  .parent {
+		background-image: url("../images/downArrow.png");
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+		padding: 10px 30px 10px 15px;
+	  }
+	  a {
+		display: block;
+	  }
+	}
+  }
+  > li.hover > ul {
+	left: 0;
+	margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .active {
+	display: block;
+  }
+  .nav {
+	> li {
+	  float: none;
+	  border-top: 1px solid $main-color-darker;
+	  > .parent {
+		background-position: 95% 50%;
+	  }
+	}
+	li li .parent {
+	  background-image: url("../images/downArrow.png");
+	  background-repeat: no-repeat;
+	  background-position: 95% 50%;
+	}
+	ul {
+	  display: block;
+	  width: 100%;
+	}
+	> li.hover > ul, li li.hover ul {
+	  position: static;
+	}
+  }
+}
