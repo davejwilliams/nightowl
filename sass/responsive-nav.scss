@@ -1,14 +1,13 @@
 $main-color: #1B75BA;
 
-$main-color-dark: darken( $main-color, 10% );
-$main-color-darker: darken( $main-color, 15% );
-$main-color-darkest: darken( $main-color, 20% );
+$main-color-dark: darken($main-color, 10%);
+$main-color-darker: darken($main-color, 15%);
+$main-color-darkest: darken($main-color, 20%);
 
-$main-color-light: lighten( $main-color, 5% );
-$main-color-lighter: lighten( $main-color, 10% );
+$main-color-light: lighten($main-color, 5%);
+$main-color-lighter: lighten($main-color, 10%);
 
 $text-color: #fff;
-
 
 body, nav, ul, li, a {
   margin: 0;
@@ -106,7 +105,7 @@ a {
   > li {
 	float: left;
 	/*border-top: 1px solid gray;*/
-	> {
+	>  {
 	  .parent {
 		background-image: url("../images/downArrow.png");
 		background-repeat: no-repeat;

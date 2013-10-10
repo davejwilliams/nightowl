@@ -24,12 +24,23 @@ $embossedBorder: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) trans
   clear: both;
 }
 
-html {
+html,
+body {
+  font-size: 100%;
   background-color: $nightOwlGreen;
 }
 
 body {
   z-index: -1000;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
 }
 
 p {
@@ -40,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-a {
+.topBand a, #navBand a {
   color: white;
 }
 
@@ -200,7 +211,7 @@ h6 a {
 	height: 250px;
 	p {
 	  padding: 20px 0;
-	  color: #ffffff;
+	  color: white;
 	}
 	.button {
 	  position: absolute;
@@ -282,13 +293,31 @@ hr.embossed {
 }
 
 .testimonial-name {
-  color: #ffffff;
+  color: white;
   line-height: 1em;
 }
 
 .testimonial-company {
   font-size: .75em;
-  color: #ffffff;
+  color: white;
+}
+
+// ============== PORTFOLIO ==============
+
+.portPiece {
+  float: left;
+  background-color: black;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+#portMenu {
+  li{
+	display: inline;
+	padding: 0 5px;
+  }
 }
 
 // ============== FOOTER AREA ==============
@@ -298,9 +327,16 @@ footer {
   background-color: $bubbleColor;
   padding: 20px 0;
   width: 100%;
+  /*h1, h2, h3, h4, h5, h6 {
+	color: white;
+  }*/
 }
 
+// ============== ASIDE AREA ==============
 
+aside {
+  background-color: $nightOwlGreen;
+}
 
 // ============== MEDIA QUERIES ==============
 
