@@ -33,7 +33,6 @@ Template Name: Portfolio
 				?>
 
 				<ul id="portMenu">
-
 					<?php
 					//This will create the first list item 'All' which will remove any variables in the URL
 					$permalink = get_permalink();
@@ -43,50 +42,47 @@ Template Name: Portfolio
 					//This will loop through the array stored in $categories and output each value into a list
 					//each list item will be a link that will set a value in the url to be used below.
 					foreach ($categories as $category) {
-						echo '<li><a href="?category=' . strtolower($category->name) . '">' . $category->name . 's</a></li>';
+						echo '<li><a href="?category=' . strtolower($category->name) . '">' . $category->name . '</a></li>';
 					}
 					?>
 				</ul>
 				<!-- END CREATE PORTFOLIO MENU BASED ON CATEGORIES -->
 
+
 				<!-- DISPLAY PORTFOLIO PIECES BASED ON MENU ITEM CLICKED -->
 				<?php
 				//This will pull in the value set in the url to display certain items in the portfolio
 
-				// WP_Query arguments
+				// See's what category was clicked on my checking the url
 				$category = htmlspecialchars($_GET["category"]);
 
+				// Setup for the loop, using the above $category
 				$args = array(
 					'post_type' => 'portfoliopiece',
 					'genre' => $category,
-					//'posts_per_page'         => '1',
+					//'posts_per_page' => '1',
 				);
-				?>
 
-				<?php
-				// The Query
+				// The Loop!
 				$portfolio_loop = new WP_Query($args);
 				?>
 
-
 				<!-- PULL IN POST INFO AND CREATE LIST ITEMS -->
-
 				<?php if ($portfolio_loop->have_posts()): ?>
 
-					<ul class="clearing-thumbs" data-clearing>
-
+					<ul>
 						<?php while ($portfolio_loop->have_posts()): ?>
 							<?php $portfolio_loop->the_post(); ?>
-
 							<li>
+								<h2><a class="fancybox fancybox.iframe" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
 								<?php if (has_post_thumbnail()): ?>
 									<?php the_post_thumbnail('thumb'); ?>
 								<?php endif; ?>
-								 data-caption="<?php the_content(); ?>"
+
+								<?php //the_content(); ?>
 							</li>
-
 						<?php endwhile; ?>
-
 					</ul>
 
 				<?php else: ?>
@@ -102,8 +98,10 @@ Template Name: Portfolio
 
 				<!-- END DISPLAY PORTFOLIO PIECES -->
 
+
 			</div>
-		</main><!-- #main -->
+		</main>
+		<!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
