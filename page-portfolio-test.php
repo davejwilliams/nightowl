@@ -1,10 +1,22 @@
 <?php
 /*
-Template Name: Portfolio
+Template Name: Portfolio Test
 */
 ?>
 
 <?php get_header(); ?>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				helpers : {
+					media : {}
+				}
+			});
+		});
+	</script>
 
 	<div id="primary" class="content-area clearfix">
 		<main id="main" class="site-main clearfix" role="main">
@@ -49,7 +61,13 @@ Template Name: Portfolio
 				</ul>
 				<!-- END CREATE PORTFOLIO MENU BASED ON CATEGORIES -->
 
-				<!-- DISPLAY PORTFOLIO PIECES BASED ON MENU ITEM CLICKED -->
+
+
+
+
+
+				<!-- TEST AREA -->
+
 				<?php
 				//This will pull in the value set in the url to display certain items in the portfolio
 
@@ -64,43 +82,35 @@ Template Name: Portfolio
 				?>
 
 				<?php
-				// The Query
-				$portfolio_loop = new WP_Query($args);
-				?>
+				$go = new WP_Query( $args );
+				while ( $go->have_posts() ) : $go->the_post();
+					?>
+					<?php
+					$imgID = get_post_thumbnail_id();
+					$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+					?>
+					<article class="work">
+						<a class="group fancybox" rel="fancybox" href="<?php echo $url; ?>" >
+							<div class="work-thumb">
+								<?php the_post_thumbnail('thumb'); ?>
+							</div>
+							<h4 class="work-info work-title">
+								<?php the_title(); ?>
+							</h4>
+							<div class="work-info work-content">
+								<?php the_content(); ?>
+							</div>
+						</a>
+					</article>
+				<?php endwhile; wp_reset_query(); ?>
+
+				<!-- END TEST AREA -->
 
 
-				<!-- PULL IN POST INFO AND CREATE LIST ITEMS -->
 
-				<?php if ($portfolio_loop->have_posts()): ?>
 
-					<ul class="clearing-thumbs" data-clearing>
 
-						<?php while ($portfolio_loop->have_posts()): ?>
-							<?php $portfolio_loop->the_post(); ?>
 
-							<li>
-								<?php if (has_post_thumbnail()): ?>
-									<?php the_post_thumbnail('thumb'); ?>
-								<?php endif; ?>
-								 data-caption="<?php the_content(); ?>"
-							</li>
-
-						<?php endwhile; ?>
-
-					</ul>
-
-				<?php else: ?>
-
-					<p>No Portfolio Pieces Found</p>
-
-				<?php endif; ?>
-
-				<?php
-				// Restore original Post Data
-				wp_reset_postdata();
-				?>
-
-				<!-- END DISPLAY PORTFOLIO PIECES -->
 
 			</div>
 		</main><!-- #main -->

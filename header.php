@@ -21,6 +21,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>/js/vendor/custom.modernizr.js"></script>
 	<!-- END FOUNDATION -->
 
+
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/responsive-nav.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/mystyles.css">
 

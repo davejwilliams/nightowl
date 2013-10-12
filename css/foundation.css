@@ -4998,6 +4998,7 @@ label.error {
 .visible-img {
 	height: 95%;
 	position: relative;
+	margin-top: 50px;
 }
 
 .visible-img img {

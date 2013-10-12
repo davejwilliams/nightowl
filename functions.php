@@ -138,3 +138,12 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Custom Post Types file.
  */
 require get_template_directory() . '/customposttypes.php';
+
+// Enqueue Scripts/Styles for our Lightbox
+function nightowl_add_lightbox() {
+	wp_enqueue_script ( 'jquery' );
+	wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/fancybox/js/jquery.fancybox.pack.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/fancybox/js/lightbox.js', array( 'fancybox' ), false, true );
+	wp_enqueue_style( 'lightbox-style', get_template_directory_uri() . '/fancybox/css/jquery.fancybox.css' );
+}
+add_action( 'wp_enqueue_scripts', 'nightowl_add_lightbox' );
