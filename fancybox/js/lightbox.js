@@ -10,15 +10,20 @@
 	//$(".gallery a[href$='.jpg'], .gallery a[href$='.png'], .gallery a[href$='.jpeg'], .gallery a[href$='.gif']").attr('rel','gallery').fancybox();
 
 	$(".iframe").fancybox({
-		maxWidth	: 800,
-		maxHeight	: 600,
+		//maxWidth	: 800,
+		//maxHeight	: 800,
 		fitToView	: false,
-		width		: '70%',
-		height		: '70%',
+		width		: 800,
+		height		: 800,
 		autoSize	: false,
 		closeClick	: false,
 		openEffect	: 'none',
-		closeEffect	: 'none'
+		closeEffect	: 'none',
+		helpers:  {
+			overlay: {
+				locked: false
+			}
+		}
 	});
 
 	// Initalize the Lightbox for any links with the 'video' class and provide improved video embed support

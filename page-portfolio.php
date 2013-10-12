@@ -74,7 +74,7 @@ Template Name: Portfolio
 						<?php while ($portfolio_loop->have_posts()): ?>
 							<?php $portfolio_loop->the_post(); ?>
 							<li>
-								<h2><a class="fancybox fancybox.iframe" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+								<h2><a class="fancybox iframe fancybox.iframe" rel="group" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 								<?php if (has_post_thumbnail()): ?>
 									<?php the_post_thumbnail('thumb'); ?>
