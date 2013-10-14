@@ -462,22 +462,36 @@ hr.embossed {
 }
 
 /* line 307, ../sass/mystyles.scss */
+#portMenu {
+  margin: 0 0 20px 0;
+}
+/* line 309, ../sass/mystyles.scss */
+#portMenu li {
+  display: inline;
+  padding: 0 5px;
+}
+
+/* line 317, ../sass/mystyles.scss */
+#portList li h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 321, ../sass/mystyles.scss */
+#portList li img {
+  max-height: 200px;
+  width: auto;
+}
+
+/* line 327, ../sass/mystyles.scss */
 .portPiece {
   float: left;
   background-color: black;
   width: 200px;
   padding: 10px;
   margin: 10px;
-  text-align: center;
 }
 
-/* line 317, ../sass/mystyles.scss */
-#portMenu li {
-  display: inline;
-  padding: 0 5px;
-}
-
-/* line 325, ../sass/mystyles.scss */
+/* line 339, ../sass/mystyles.scss */
 footer {
   background-color: #092833;
   padding: 20px 0;
@@ -487,58 +501,58 @@ footer {
   }*/
 }
 
-/* line 337, ../sass/mystyles.scss */
+/* line 351, ../sass/mystyles.scss */
 aside {
   background-color: #071c22;
 }
 
 /* Large screens */
 @media only screen and (min-width: 940px) {
-  /* line 346, ../sass/mystyles.scss */
+  /* line 360, ../sass/mystyles.scss */
   .mobilesOnly {
     display: none;
   }
 
-  /* line 347, ../sass/mystyles.scss */
+  /* line 361, ../sass/mystyles.scss */
   .desktopOnly {
     display: inline-block;
   }
 
-  /* line 349, ../sass/mystyles.scss */
+  /* line 363, ../sass/mystyles.scss */
   #cloudBackground {
     background-position: 100% 20px;
   }
 }
 /* Medium screens */
 @media only screen and (max-width: 939px) and (min-width: 768px) {
-  /* line 358, ../sass/mystyles.scss */
+  /* line 372, ../sass/mystyles.scss */
   .mobilesOnly {
     display: none;
   }
 
-  /* line 359, ../sass/mystyles.scss */
+  /* line 373, ../sass/mystyles.scss */
   .desktopOnly {
     display: inline-block;
   }
 
-  /* line 361, ../sass/mystyles.scss */
+  /* line 375, ../sass/mystyles.scss */
   #cloudBackground {
     background-position: 100% 20px;
   }
 }
 /* Small screens */
 @media only screen and (max-width: 767px) {
-  /* line 370, ../sass/mystyles.scss */
+  /* line 384, ../sass/mystyles.scss */
   .mobilesOnly {
     display: inline-block;
   }
 
-  /* line 371, ../sass/mystyles.scss */
+  /* line 385, ../sass/mystyles.scss */
   .desktopOnly {
     display: none;
   }
 
-  /* line 373, ../sass/mystyles.scss */
+  /* line 387, ../sass/mystyles.scss */
   #cloudBackground {
     background-position: 100% 20px;
   }

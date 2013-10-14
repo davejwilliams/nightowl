@@ -1,42 +1,111 @@
 <?php
 /**
- * The Template for displaying all single posts.
+ * The Template for displaying all single portfolio pieces.
  *
  * @package nightowl
  */
 ?>
 
-<?php //get_header(); ?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FOUNDATION -->
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/foundation.css">
+	<script src="<?php bloginfo('template_directory'); ?>/js/vendor/custom.modernizr.js"></script>
+	<!-- END FOUNDATION -->
+
+	<style>
+		div {
+			-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+			-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+			box-sizing: border-box;         /* Opera/IE 8+ */
+		}
+		#portPiece {
+			font: 14px Arial, Helvetica, sans-serif;
+			color: graytext;
+		}
+
+		#portImage {
+			display: inline-block;
+			max-width: 100%;
+			margin-bottom: 5px;
+			padding: 0;
+			border: 1px solid graytext;
+		}
+		#portVisit{
+			display: block;
+			margin-left: 20px;
+			/*text-align: right;*/
+		}
+		#portDetails{
+			background-color: graytext;
+			color: #ffffff;
+			padding: 10px 15px 15px;
+			margin-bottom: 10px;
+			margin-top: 5px;
+			border: 1px solid #000000;
+		}
+		#portDetails p{
+			margin: 0;
+		}
+		#infoIcon{
+			width: 30px;
+			margin: -40px 0 0 -30px;
+		}
+		h6{
+			color: #1B75BA;
+			/*font-size: 18px;*/
+		}
+		strong{
+			font-weight: bold;
+			font-size: 12px;
+			margin-left: -5px;
+		}
+	</style>
+
+</head>
+
+<body>
 
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php while (have_posts()) : the_post(); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+	<div class="row" id="portPiece">
 
-			<?php //get_template_part( 'content', 'single' ); ?>
+		<div class="large-12 columns">
+			<h6><?php the_title(); ?></h6>
 
-			<?php //nightowl_content_nav( 'nav-below' ); ?>
+			<div id="portImage">
+				<?php if (has_post_thumbnail()): ?>
+					<?php the_post_thumbnail('large'); ?>
+				<?php endif; ?>
+			</div>
+		</div>
 
-			<?php if (has_post_thumbnail()): ?>
-				<?php the_post_thumbnail('large'); ?>
+		<div class="large-12 columns">
+
+
+			<?php if ( get_field( "url" ) ): ?>
+				<a href="http://www.<?php the_field('url'); ?>" id="portVisit" target="_blank">Visit Site >></a>
+			<?php else: ?>
+				<p></p>
 			<?php endif; ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || '0' != get_comments_number() )
-					comments_template();
-			?>
+
+			<div id="portDetails">
+				<img id="infoIcon" src="<?php bloginfo('template_directory'); ?>/images/info.png">
+				<strong>Details: </strong><?php the_content(); ?>
+			</div>
+		</div>
 
 
-			<?php echo "<h2 style='color: green;'>HULLOZ?!</h2>"; ?>
+		<div class="large-12 columns">
+			<a href="http://www.example.com/" target="_parent"> Contact us</a> now to find out how we can create a website you'll be proud of.
+		</div>
 
+	</div>
 
-		<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-
-<?php //get_sidebar(); ?>
-<?php //get_footer(); ?>
+<?php endwhile; // end of the loop. ?>
+</body>

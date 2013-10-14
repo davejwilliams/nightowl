@@ -70,17 +70,19 @@ Template Name: Portfolio
 				<!-- PULL IN POST INFO AND CREATE LIST ITEMS -->
 				<?php if ($portfolio_loop->have_posts()): ?>
 
-					<ul>
+					<ul class="inline-list" id="portList">
 						<?php while ($portfolio_loop->have_posts()): ?>
 							<?php $portfolio_loop->the_post(); ?>
 							<li>
-								<h2><a class="fancybox iframe fancybox.iframe" rel="group" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+								<a class="fancybox iframe fancybox.iframe" rel="group" style="display:inline-block;" href="<?php the_permalink(); ?>">
+									<h6><?php the_title(); ?></h6>
 
-								<?php if (has_post_thumbnail()): ?>
-									<?php the_post_thumbnail('thumb'); ?>
-								<?php endif; ?>
+									<?php if (has_post_thumbnail()): ?>
+										<div style="border: 1px solid #000"><?php the_post_thumbnail('medium'); ?></div>
+									<?php endif; ?>
 
-								<?php //the_content(); ?>
+									<?php //the_content(); ?>
+								</a>
 							</li>
 						<?php endwhile; ?>
 					</ul>

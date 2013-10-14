@@ -304,17 +304,25 @@ hr.embossed {
   font-size: .75em;
   color: white; }
 
+#portMenu {
+  margin: 0 0 20px 0; }
+  #portMenu li {
+    display: inline;
+    padding: 0 5px; }
+
+#portList li h6 {
+  font-size: 12px;
+  font-weight: bold; }
+#portList li img {
+  max-height: 200px;
+  width: auto; }
+
 .portPiece {
   float: left;
   background-color: black;
   width: 200px;
   padding: 10px;
-  margin: 10px;
-  text-align: center; }
-
-#portMenu li {
-  display: inline;
-  padding: 0 5px; }
+  margin: 10px; }
 
 footer {
   background-color: #092833;

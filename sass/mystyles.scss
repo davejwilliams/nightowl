@@ -304,21 +304,35 @@ hr.embossed {
 
 // ============== PORTFOLIO ==============
 
+#portMenu {
+  margin: 0 0 20px 0;
+  li{
+	display: inline;
+	padding: 0 5px;
+  }
+}
+#portList{
+
+  li{
+	h6 {
+	  font-size: 12px;
+	  font-weight: bold;
+	}
+	img {
+	  max-height: 200px;
+	  width: auto;
+	}
+  }
+}
 .portPiece {
   float: left;
   background-color: black;
   width: 200px;
   padding: 10px;
   margin: 10px;
-  text-align: center;
+  //text-align: center;
 }
 
-#portMenu {
-  li{
-	display: inline;
-	padding: 0 5px;
-  }
-}
 
 // ============== FOOTER AREA ==============
 

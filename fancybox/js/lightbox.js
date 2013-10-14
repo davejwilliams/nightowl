@@ -9,12 +9,14 @@
 	// Initialize the Lightbox and add rel="gallery" to all gallery images when the gallery is set up using  so that a Lightbox Gallery exists
 	//$(".gallery a[href$='.jpg'], .gallery a[href$='.png'], .gallery a[href$='.jpeg'], .gallery a[href$='.gif']").attr('rel','gallery').fancybox();
 
-	$(".iframe").fancybox({
-		//maxWidth	: 800,
-		//maxHeight	: 800,
+	$(".iframe")
+		.attr('rel', 'gallery')
+		.fancybox({
+		maxWidth	: 600,
+		maxHeight	: 950,
 		fitToView	: false,
-		width		: 800,
-		height		: 800,
+		width       : '70%',
+		height      : '70%',
 		autoSize	: false,
 		closeClick	: false,
 		openEffect	: 'none',
